@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./icons-leads-tracking-management.svg" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./icons-leads-tracking-management.svg"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Lead Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Fade-in animation */
-        .fade-in {
-            animation: fadeIn 0.5s ease-in-out;
-        }
+      /* Fade-in animation */
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
         }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
-</head>
-<body class="bg-black text-white font-sans p-4">
-
+  </head>
+  <body class="bg-black text-white font-sans p-4">
     <!-- Header -->
     <header class="text-center py-4">
-        <h1 class="text-3xl font-bold">Lead Tracker</h1>
+      <h1 class="text-3xl font-bold">Lead Tracker</h1>
     </header>
 
     <!-- Main Content -->
     <main class="max-w-xl mx-auto space-y-4">
-        
-        <!-- Input Fields -->
-        <input type="text" id="title-el" placeholder="Enter a title for the lead..." class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white">
-        <input type="text" id="input-el" placeholder="Enter a URL or note here..." class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white">
+      <!-- Input Fields -->
+      <input
+        type="text"
+        id="title-el"
+        placeholder="Enter a title for the lead..."
+        class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white"
+      />
+      <input
+        type="text"
+        id="input-el"
+        placeholder="Enter a URL or note here..."
+        class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white"
+      />
 
-        <!-- Buttons -->
-        <div class="flex gap-2">
-            <button id="input-btn" class="flex-1 bg-blue-600 hover:bg-blue-700 transition-transform transform hover:scale-105 text-white py-2 rounded">Save Input</button>
-            <button id="delete-btn" class="flex-1 bg-red-600 hover:bg-red-700 transition-transform transform hover:scale-105 text-white py-2 rounded">Delete All</button>
-        </div>
-        <button id="sort-btn" class="bg-gray-700 text-white px-3 py-1 rounded mt-3">Sort: Newest</button>
+      <!-- Buttons -->
+      <div class="flex gap-2">
+        <button
+          id="input-btn"
+          class="flex-1 bg-blue-600 hover:bg-blue-700 transition-transform transform hover:scale-105 text-white py-2 rounded"
+        >
+          Save Input
+        </button>
+        <button
+          id="delete-btn"
+          class="flex-1 bg-red-600 hover:bg-red-700 transition-transform transform hover:scale-105 text-white py-2 rounded"
+        >
+          Delete All
+        </button>
+      </div>
+      <button
+        id="sort-btn"
+        class="bg-gray-700 text-white px-3 py-1 rounded mt-3"
+      >
+        Sort: Newest
+      </button>
 
-        <!-- Search Bar -->
-        <input type="text" id="search-el" placeholder="Search leads..." class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white">
+      <!-- Search Bar -->
+      <input
+        type="text"
+        id="search-el"
+        placeholder="Search leads..."
+        class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white"
+      />
 
-        <!-- Leads List -->
-        <ul id="ul-el" class="space-y-2"></ul>
-
+      <!-- Leads List -->
+      <ul id="ul-el" class="space-y-2"></ul>
     </main>
 
     <!-- Footer -->
     <footer class="text-center mt-6 text-sm text-gray-400">
-        <p>&copy; Jayzwillz 2025 Lead Tracker. All rights reserved.</p>
+      <p>&copy; Jayzwillz 2025 Lead Tracker. All rights reserved.</p>
     </footer>
     <script type="module" src="./index.js"></script>
-</body>
+  </body>
 </html>
